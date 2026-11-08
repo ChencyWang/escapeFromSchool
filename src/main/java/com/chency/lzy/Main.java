@@ -1,3 +1,19 @@
+/*
+Copyright (C) 2026 ChencyWang
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
 package com.chency.lzy;
 
 import java.util.Arrays;
@@ -10,6 +26,8 @@ public class Main {
         System.out.print(Arrays.toString(Game.start));
         System.out.flush();
         System.out.print("©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator());
+        System.out.print("Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
+                "No inappropriate guidance, please do not imitate . " + System.lineSeparator());
         System.out.flush();
         Thread.sleep(5600);
         ///Input Player Name
@@ -56,10 +74,13 @@ public class Main {
         char FirstChoose = sc.next().charAt(0);
         if(Character.toUpperCase(FirstChoose) == 'A'){
             Random random = new Random();
-            int r1 = random.nextInt();
-            if(r1 < 61){
-                Thread.sleep(700);
-                System.out.print("");
+            int r1 = random.nextInt(100);
+            Thread.sleep(700);
+            System.out.print("System > " + System.lineSeparator());
+            Game.sleep_print("You chose to run away . " + System.lineSeparator(),100);
+            System.out.flush();
+            if(r1 < 81){
+                Game.sleep_print("(On the second-floor corridor ...)",100);
             }else{
 
             }
