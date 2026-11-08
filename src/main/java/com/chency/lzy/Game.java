@@ -18,7 +18,7 @@ package com.chency.lzy;
 
 public class Game {
 
-    public final static String[] start = new String[] {
+    public final static String[] startInterface = new String[] {
             """
     
                       "You, come here."

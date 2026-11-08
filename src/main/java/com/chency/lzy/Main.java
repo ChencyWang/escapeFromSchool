@@ -19,15 +19,18 @@ package com.chency.lzy;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         /// Start Interface
-        System.out.print(Arrays.toString(Game.start));
+        for(int i = 0;i < Game.startInterface.length;i ++){
+            System.out.print(Game.startInterface[i]);
+        }
         System.out.flush();
         System.out.print("©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator());
         System.out.print("Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
-                "No inappropriate guidance, please do not imitate . " + System.lineSeparator());
+                "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator());
         System.out.flush();
         Thread.sleep(5600);
         ///Input Player Name
@@ -72,8 +75,8 @@ public class Main {
         ///Choose
         System.out.print("Choose" + System.lineSeparator());
         System.out.print("A . Get out by the back door . " + System.lineSeparator() + "B . Continue the class . " + System.lineSeparator() + "> ");
-        char FirstChoose = sc.next().charAt(0);
-        if(Character.toUpperCase(FirstChoose) == 'A'){
+        String FirstChoose = sc.nextLine();
+        if("A".equalsIgnoreCase(FirstChoose)){
             Random random = new Random();
             int r1 = random.nextInt(100);
             Thread.sleep(700);
@@ -114,10 +117,16 @@ public class Main {
                 Game.sleep_print(playerName + ", leaving the classroom without permission during class . " + System.lineSeparator(),100);
                 Thread.sleep(500);
                 Game.sleep_print("Deduct 2 points ! ",100);
-
             }
-        }else if(Character.toUpperCase(FirstChoose) == 'B'){
-
+        }else if("B".equalsIgnoreCase(FirstChoose)){
+            Game.sleep_print("Nothing happened . ",100);
+            Thread.sleep(800);
+            for(int i = 0;i < Game.endInterface.length;i ++){
+                System.out.print(Game.endInterface[i]);
+                Thread.sleep(700);
+                Game.sleep_print("The game will exit in 3 seconds . ",100);
+                Thread.sleep(3000);
+            }
         }
     }
 }
