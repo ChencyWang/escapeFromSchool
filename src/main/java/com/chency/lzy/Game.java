@@ -16,9 +16,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 package com.chency.lzy;
 
-import java.util.Scanner;
-import java.util.Random;
-
 public class Game {
 
     public final static String[] start = new String[] {
@@ -35,11 +32,21 @@ public class Game {
     
     """
     };
-    public final static String[] endInterface = new String[]{"         ------   Game over   ------       " + System.lineSeparator()
-            , "        Thank you for playing the game I made . " + System.lineSeparator()
+    public final static String[] endInterface = new String[]{
+              "         ------   Game over   ------       " + System.lineSeparator()
+            , "     Thank you for playing the game I made . " + System.lineSeparator()
             , " - List of production personnel " + System.lineSeparator()
+            , "ChencyWang " + System.lineSeparator() + System.lineSeparator()
+            , " - Script production " + System.lineSeparator()
             , "ChencyWang" + System.lineSeparator() + System.lineSeparator()
-            , " - Special Acknowledgments " + System.lineSeparator()};
+            , " - Special Acknowledgments " + System.lineSeparator()
+            , "Bilibili " + System.lineSeparator()
+            , "Watt Toolkit " + System.lineSeparator()
+            , "IntelliJ IDEA " + System.lineSeparator()
+            , "Ollama " + System.lineSeparator()
+            , "PCL-Deepseek-Harness-Launcher " + System.lineSeparator()
+            , "fanyi.baidu.com " + System.lineSeparator() + System.lineSeparator()
+            , "In conclusion, the author would like to express gratitude to everyone who played this game . " + System.lineSeparator()};
     public static void sleep_print(String say, int ms) throws InterruptedException {
         for (int i = 0;i < say.length();i ++) {
             System.out.print(say.charAt(i));

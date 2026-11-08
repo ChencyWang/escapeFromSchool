@@ -66,6 +66,7 @@ public class Main {
         Thread.sleep(1000);
         ///Mind
         System.out.print("Mind > " + System.lineSeparator());
+        System.out.flush();
         Game.sleep_print("I can't stand this. I need to get out of here . " + System.lineSeparator() + System.lineSeparator(),100);
         Thread.sleep(1000);
         ///Choose
@@ -81,10 +82,41 @@ public class Main {
             System.out.flush();
             if(r1 < 81){
                 Game.sleep_print("(On the second-floor corridor ...)",100);
+                Thread.sleep(800);
+                System.out.print("Me > " + System.lineSeparator());
+                System.out.flush();
+                Game.sleep_print("How lucky! There's no teacher patrolling . " + System.lineSeparator(),100);
+                System.out.flush();
+                Thread.sleep(800);
+                System.out.print("Me > " + System.lineSeparator());
+                System.out.flush();
+                Game.sleep_print("Shall we take the east staircase or the west staircase ? ",100);
+                Thread.sleep(800);
+                System.out.print("Choose > " + System.lineSeparator());
+                System.out.flush();
+                System.out.print("A . Take the east stairs .    B .  Take the west stairs . " + System.lineSeparator());
+                System.out.flush();
+                System.out.print(" > " + System.lineSeparator());
+
             }else{
+                System.out.print("Me > " + System.lineSeparator());
+                System.out.flush();
+                Game.sleep_print("Not good! It's the teacher!",100);
+                Thread.sleep(650);
+                System.out.print("Teacher > " + System.lineSeparator());
+                Game.sleep_print("You ! Stop ! " + System.lineSeparator(),100);
+                Thread.sleep(800);
+                System.out.print("Teacher > " + System.lineSeparator());
+                Game.sleep_print("Follow me to the office ! " + System.lineSeparator(),100);
+                Thread.sleep(900);
+                Game.sleep_print("(After some time ... ) " + System.lineSeparator(),100);
+                System.out.print("School broadcast announcement > " + System.lineSeparator());
+                Game.sleep_print(playerName + ", leaving the classroom without permission during class . " + System.lineSeparator(),100);
+                Thread.sleep(500);
+                Game.sleep_print("Deduct 2 points ! ",100);
 
             }
-        }else{
+        }else if(Character.toUpperCase(FirstChoose) == 'B'){
 
         }
     }
