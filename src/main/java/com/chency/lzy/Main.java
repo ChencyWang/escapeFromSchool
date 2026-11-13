@@ -27,10 +27,11 @@ public class Main {
             System.out.print(Game.startInterface[i]);
         }
         System.out.flush();
-        System.out.print("©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator());
-        System.out.print("Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
-                "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator());
-        System.out.flush();
+        /// Start Copyright
+        for(int i = 0;i < Game.startCopyright.length;i ++) {
+            System.out.print(Game.startCopyright[i]);
+            System.out.flush();
+        }
         Thread.sleep(5600);
         ///Input Player Name
         Scanner sc = new Scanner(System.in);
@@ -106,7 +107,9 @@ public class Main {
                 Game.sleep_print("Not good! It's the teacher!",100);
                 Thread.sleep(650);
                 System.out.print("Teacher > " + System.lineSeparator());
+                System.out.flush();
                 Game.sleep_print("You ! Stop ! " + System.lineSeparator(),100);
+                System.out.flush();
                 Thread.sleep(800);
                 System.out.print("Teacher > " + System.lineSeparator());
                 Game.sleep_print("Follow me to the office ! " + System.lineSeparator(),100);
@@ -116,6 +119,13 @@ public class Main {
                 Game.sleep_print(playerName + ", leaving the classroom without permission during class . " + System.lineSeparator(),100);
                 Thread.sleep(500);
                 Game.sleep_print("Deduct 2 points ! ",100);
+                Thread.sleep(500);
+                System.out.print("Student1 > " + System.lineSeparator());
+                Game.sleep_print("Oh my god ! ",100);
+                Thread.sleep(500);
+                System.out.print("Student2 > " + System.lineSeparator());
+
+                Game.sleep_print("I had suspected he was up to something shady before, and it seems my guess was right . ",100);
             }
         }else if("B".equalsIgnoreCase(FirstChoose)){
             Game.sleep_print("Nothing happened . ",100);
@@ -123,9 +133,10 @@ public class Main {
             for(int i = 0;i < Game.endInterface.length;i ++){
                 System.out.print(Game.endInterface[i]);
                 Thread.sleep(700);
-                Game.sleep_print("The game will exit in 3 seconds . ",100);
-                Thread.sleep(3000);
             }
+            System.out.print(System.lineSeparator());
+            Game.sleep_print("The game will exit in 3 seconds . ",100);
+            Thread.sleep(3000);
         }
     }
 }

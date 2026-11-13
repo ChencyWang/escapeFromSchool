@@ -16,6 +16,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 package com.chency.lzy;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Game {
 
     public final static String[] startInterface = new String[] {
@@ -47,7 +49,10 @@ public class Game {
             , "PCL-Deepseek-Harness-Launcher " + System.lineSeparator()
             , "fanyi.baidu.com " + System.lineSeparator() + System.lineSeparator()
             , "In conclusion, the author would like to express gratitude to everyone who played this game . " + System.lineSeparator()};
-    public static void sleep_print(String say, int ms) throws InterruptedException {
+    public final static String[] startCopyright = {"©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator() +
+        "Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
+                "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator()};
+    public static void sleep_print(@NotNull String say, int ms) throws InterruptedException {
         for (int i = 0;i < say.length();i ++) {
             System.out.print(say.charAt(i));
             System.out.flush();
