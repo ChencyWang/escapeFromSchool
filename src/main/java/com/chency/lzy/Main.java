@@ -16,6 +16,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 package com.chency.lzy;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
@@ -100,7 +101,12 @@ public class Main {
                 System.out.print("A . Take the east stairs .    B .  Take the west stairs . " + System.lineSeparator());
                 System.out.flush();
                 System.out.print(" > " + System.lineSeparator());
+                String secondChoose = sc.nextLine();
+                if("A".equalsIgnoreCase(secondChoose)){
 
+                }else if("B".equalsIgnoreCase(secondChoose)){
+
+                }
             }else{
                 System.out.print("Me > " + System.lineSeparator());
                 System.out.flush();
@@ -124,8 +130,12 @@ public class Main {
                 Game.sleep_print("Oh my god ! ",100);
                 Thread.sleep(500);
                 System.out.print("Student2 > " + System.lineSeparator());
-
                 Game.sleep_print("I had suspected he was up to something shady before, and it seems my guess was right . ",100);
+                Thread.sleep(800);
+                for(int i = 0;i < Game.endInterface.length;i ++){
+                    System.out.print(Game.endInterface[i]);
+                    Thread.sleep(700);
+                }
             }
         }else if("B".equalsIgnoreCase(FirstChoose)){
             Game.sleep_print("Nothing happened . ",100);
@@ -137,6 +147,16 @@ public class Main {
             System.out.print(System.lineSeparator());
             Game.sleep_print("The game will exit in 3 seconds . ",100);
             Thread.sleep(3000);
+            System.exit(0);
+        }else{
+            for(int i = 0;i < Game.exceptionInterface.length;i ++){
+                System.out.print(Game.exceptionInterface[i]);
+                System.out.flush();
+            }
+            System.out.print(System.lineSeparator());
+            Game.sleep_print("The game will exit in 3 seconds . ",100);
+            Thread.sleep(3000);
+            System.exit(0);
         }
     }
 }

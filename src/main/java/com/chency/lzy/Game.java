@@ -52,6 +52,14 @@ public class Game {
     public final static String[] startCopyright = {"©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator() +
         "Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
                 "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator()};
+    public final static String[] exceptionInterface = {
+              ":( Game Exception"
+            , "Sorry ! there is an exception in the game ! " + System.lineSeparator()
+            , "It may be because : " + System.lineSeparator()
+            , " - Your option input is incorrect" + System.lineSeparator()
+            , "And others . " + System.lineSeparator()
+            , "You can restart the game . " + System.lineSeparator()
+            , "I'm really, really, really sorry"};
     public static void sleep_print(@NotNull String say, int ms) throws InterruptedException {
         for (int i = 0;i < say.length();i ++) {
             System.out.print(say.charAt(i));
