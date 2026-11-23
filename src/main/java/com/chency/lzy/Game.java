@@ -16,8 +16,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 package com.chency.lzy;
 
-import org.jetbrains.annotations.NotNull;
-
 public class Game {
 
     public final static String[] startInterface = new String[] {
@@ -35,36 +33,36 @@ public class Game {
     """
     };
     public final static String[] endInterface = new String[]{
-              "         ------   Game over   ------       " + System.lineSeparator()
-            , "     Thank you for playing the game I made . " + System.lineSeparator()
-            , " - List of production personnel " + System.lineSeparator()
-            , "ChencyWang " + System.lineSeparator() + System.lineSeparator()
-            , " - Script production " + System.lineSeparator()
-            , "ChencyWang" + System.lineSeparator() + System.lineSeparator()
-            , " - Special Acknowledgments " + System.lineSeparator()
-            , "Bilibili " + System.lineSeparator()
-            , "Watt Toolkit " + System.lineSeparator()
-            , "IntelliJ IDEA " + System.lineSeparator()
-            , "Ollama " + System.lineSeparator()
-            , "PCL-Deepseek-Harness-Launcher " + System.lineSeparator()
-            , "fanyi.baidu.com " + System.lineSeparator() + System.lineSeparator()
-            , "In conclusion, the author would like to express gratitude to everyone who played this game . " + System.lineSeparator()};
+              "           ------   Game over   ------       " + System.lineSeparator()
+            , "       Thank you for playing the game I made . " + System.lineSeparator()
+            , "   - List of production personnel " + System.lineSeparator()
+            , "  ChencyWang " + System.lineSeparator() + System.lineSeparator()
+            , "   - Script production " + System.lineSeparator()
+            , "  ChencyWang" + System.lineSeparator() + System.lineSeparator()
+            , "   - Special Acknowledgments " + System.lineSeparator()
+            , "  Bilibili " + System.lineSeparator()
+            , "  Watt Toolkit " + System.lineSeparator()
+            , "  IntelliJ IDEA " + System.lineSeparator()
+            , "  Ollama " + System.lineSeparator()
+            , "  PCL-Deepseek-Harness-Launcher " + System.lineSeparator()
+            , "  fanyi.baidu.com " + System.lineSeparator() + System.lineSeparator()
+            , "  In conclusion, the author would like to express gratitude to everyone who played this game . " + System.lineSeparator()};
     public final static String[] startCopyright = {"©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator() +
         "Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
                 "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator()};
     public final static String[] exceptionInterface = {
-              ":( Game Exception"
+              ":( Game Exception" + System.lineSeparator()
             , "Sorry ! there is an exception in the game ! " + System.lineSeparator()
             , "It may be because : " + System.lineSeparator()
             , " - Your option input is incorrect" + System.lineSeparator()
             , "And others . " + System.lineSeparator()
             , "You can restart the game . " + System.lineSeparator()
-            , "I'm really, really, really sorry"};
-    public static void sleep_print(@NotNull String say, int ms) throws InterruptedException {
+            , "I'm really, really, really sorry . " + System.lineSeparator()};
+    public static void sleep_print(String say, int ms) throws InterruptedException {
         for (int i = 0;i < say.length();i ++) {
             System.out.print(say.charAt(i));
-            System.out.flush();
             Thread.sleep(ms);
+            System.out.flush();
         }
     }
     public static void main(String[] args){
