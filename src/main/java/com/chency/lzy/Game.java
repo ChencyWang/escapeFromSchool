@@ -22,9 +22,9 @@ public class Game {
             """
     
                       "You, come here."
-                                    ╔══════════╗ ™
+                                    ╔══════════╗
                      ESCAPE FROM    ║  SCHOOL  ║
-           "Come out of here!"      ╚══════════╝
+           "Come out of here!"      ╚══════════╝   By ChencyWang
     
                        "Did you finish your homework?"
             "Give it
@@ -47,7 +47,7 @@ public class Game {
             , "  PCL-Deepseek-Harness-Launcher " + System.lineSeparator()
             , "  fanyi.baidu.com " + System.lineSeparator() + System.lineSeparator()
             , "  In conclusion, the author would like to express gratitude to everyone who played this game . " + System.lineSeparator()};
-    public final static String[] startCopyright = {"©2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator() +
+    public final static String[] startCopyright = {"(c)2026 Github ChencyWang All rights reserved. Violators will be prosecuted." + System.lineSeparator() +
         "Content interpretation, for entertainment purposes only . " + System.lineSeparator() +
                 "No inappropriate guidance, please do not imitate . " + System.lineSeparator() + System.lineSeparator()};
     public final static String[] exceptionInterface = {
