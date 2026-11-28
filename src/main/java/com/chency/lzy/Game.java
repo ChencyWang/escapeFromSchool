@@ -60,9 +60,19 @@ public class Game {
             , "I'm really, really, really sorry . " + System.lineSeparator()};
     public static void sleep_print(String say, int ms) throws InterruptedException {
         for (int i = 0;i < say.length();i ++) {
-            System.out.print(say.charAt(i));
-            Thread.sleep(ms);
-            System.out.flush();
+            if(say.charAt(i) == '.' || say.charAt(i) == '!'){
+                System.out.print(say.charAt(i));
+                Thread.sleep(ms + 30);
+                System.out.flush();
+            }else if(say.charAt(i) == ','){
+                System.out.print(say.charAt(i));
+                Thread.sleep(ms + 15);
+                System.out.flush();
+            }else {
+                System.out.print(say.charAt(i));
+                Thread.sleep(ms);
+                System.out.flush();
+            }
         }
     }
     public static void main(String[] args){
